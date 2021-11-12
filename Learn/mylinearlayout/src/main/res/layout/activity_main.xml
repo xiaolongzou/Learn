@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:divider="@mipmap/ic_launcher"
+    android:showDividers="middle"
+    android:dividerPadding="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_weight="1"
+        android:background="#FFFF00"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <LinearLayout
+        android:background="#000000"
+        android:layout_width="100dp"
+        android:layout_weight="2"
+        android:layout_height="100dp"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:background="#FF0000"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+</LinearLayout>

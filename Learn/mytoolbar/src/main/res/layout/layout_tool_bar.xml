@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb"
+        app:navigationIcon="@drawable/ic_launcher_background"
+        app:title="标题"
+        app:titleTextColor="#ff0000"
+        app:titleMarginStart="50dp"
+        app:subtitle="子标题"
+        app:subtitleTextColor="@color/colorPrimaryDark"
+        app:logo="@mipmap/ic_launcher"
+        android:background="#FFFF00"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb2"
+        android:layout_marginTop="10dp"
+        android:background="#ffff00"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb3"
+        android:layout_marginTop="10dp"
+        android:background="#ffff00"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/ic_launcher_background"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:layout_gravity='center'
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+</LinearLayout>

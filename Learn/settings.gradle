@@ -1,2 +1,9 @@
+include ':myframelayout'
+include ':myrelativelayout'
+include ':mylinearlayout'
+include ':mypopupwindow'
+include ':myalertdialog'
+include ':mytoolbar'
+include ':mytextview'
 include ':app'
 rootProject.name = "Learn"

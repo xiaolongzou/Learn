@@ -12,6 +12,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/myalertdialog" />
+            <option value="$PROJECT_DIR$/myframelayout" />
+            <option value="$PROJECT_DIR$/mylinearlayout" />
+            <option value="$PROJECT_DIR$/mypopupwindow" />
+            <option value="$PROJECT_DIR$/myrelativelayout" />
+            <option value="$PROJECT_DIR$/mytextview" />
+            <option value="$PROJECT_DIR$/mytoolbar" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
