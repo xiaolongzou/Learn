@@ -1,8 +1,3 @@
-# Learn
-java/android learning
+#Android Learn
+记录一下android的学习成长历程
 
-
-# android基础组件：
-1.TextView
-2.Button
-3.EditText
