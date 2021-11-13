@@ -6,12 +6,14 @@
 
     <FrameLayout
         android:background="#ffff00"
-        android:layout_width="400dp"
-        android:layout_height="400dp"/>
+        android:layout_width="500dp"
+        android:layout_height="500dp"/>
 
     <FrameLayout
+        android:foregroundGravity="right|bottom"
+        android:foreground="@mipmap/ic_launcher"
         android:background="#ff0000"
-        android:layout_width="400dp"
-        android:layout_height="400dp"/>
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
 
 </FrameLayout>
