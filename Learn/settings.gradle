@@ -1,3 +1,8 @@
+include ':mymvvm'
+include ':mymvvm'
+include ':myviewpager'
+include ':myanimation'
+include ':myrecyclerview'
 include ':mylistview'
 include ':myconstraintlayout'
 include ':mygridlayout'

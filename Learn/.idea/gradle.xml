@@ -13,16 +13,20 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/myalertdialog" />
+            <option value="$PROJECT_DIR$/myanimation" />
             <option value="$PROJECT_DIR$/myconstraintlayout" />
             <option value="$PROJECT_DIR$/myframelayout" />
             <option value="$PROJECT_DIR$/mygridlayout" />
             <option value="$PROJECT_DIR$/mylinearlayout" />
             <option value="$PROJECT_DIR$/mylistview" />
+            <option value="$PROJECT_DIR$/mymvvm" />
             <option value="$PROJECT_DIR$/mypopupwindow" />
+            <option value="$PROJECT_DIR$/myrecyclerview" />
             <option value="$PROJECT_DIR$/myrelativelayout" />
             <option value="$PROJECT_DIR$/mytablelayout" />
             <option value="$PROJECT_DIR$/mytextview" />
             <option value="$PROJECT_DIR$/mytoolbar" />
+            <option value="$PROJECT_DIR$/myviewpager" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
