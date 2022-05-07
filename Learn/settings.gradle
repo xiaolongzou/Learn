@@ -16,3 +16,5 @@ include ':mytoolbar'
 include ':mytextview'
 include ':app'
 rootProject.name = "Learn"
+include ':recyclerview'
+include ':coroutine'
