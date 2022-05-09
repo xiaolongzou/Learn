@@ -1,28 +1,53 @@
 package com.example.coroutine
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.coroutine.databinding.ActivityMainBinding
 import kotlinx.coroutines.*
 
 class MainActivity : AppCompatActivity() {
 
     var job: Job? = null
     var job1: Job? = null
+    var tvContent: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var tvContent  = findViewById<TextView>(R.id.tv)
+        /**
+         * GlobalScope是生命周期是process级别的，即使Activity或者Fragment已经被销毁，协程仍然在执行。所以需要绑定生命周期
+         */
+//        job1 = GlobalScope.launch(Dispatchers.Main) {
+//            tvContent?.text = loadData()
+//        }
+        dataBinding()
+    }
+
+    private fun dataBinding() {
+        val dataBinding: ActivityMainBinding =
+            DataBindingUtil.setContentView(this, R.layout.activity_main)
+        val viewModel = ViewModelProvider(this).get(MyViewModel::class.java);
+        dataBinding.viewModel = viewModel
+        dataBinding.lifecycleOwner = this
+        val recyclerView = findViewById<RecyclerView>(R.id.lv)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+    }
+
+    fun reload() {
         job1 = GlobalScope.launch(Dispatchers.Main) {
-            tvContent.text = loadData()
+            tvContent?.text = loadData()
         }
     }
 
     /**
-     * suspend: 耗时，数据库网络请求，大量图片美化裁剪运算
+     * suspend: 耗时，数据库网络请求，大量图片美化裁剪运算,大量json数据解析，File操作，大量数组排序处理，delay操作
      */
     suspend fun loadData(): String {
         var response = " "
